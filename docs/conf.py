@@ -79,6 +79,4 @@ language = "en"
 html_static_path = ["_static"]
 html_css_files = ["pied-piper-admonition.css"]
 
-html_logo = "_static/sphere2.png"
-
 html_favicon = "_static/favicon.ico"
