@@ -38,7 +38,6 @@ extensions = [
     "sphinx_inline_tabs",
     
     # stuff i just added - might need to remove
-    extensions = [
     "myst_nb",
     "ablog",
     "sphinx_panels",
