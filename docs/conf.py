@@ -35,7 +35,23 @@ extensions = [
     # External stuff
     "myst_parser",
     "sphinx_copybutton",
-    "sphinx_inline_tabs"]
+    "sphinx_inline_tabs"],
+
+    # i put these things here - might delete
+    "myst_nb",
+    "ablog",
+    "sphinx_panels",
+    "sphinxcontrib.bibtex",
+    "sphinxext.opengraph",
+    "sphinxext.rediraffe",
+    ]
+    
+# might also delete
+# MyST config
+myst_enable_extensions = [
+    "deflist",
+    "colon_fence",
+]
     
 templates_path = ["_templates"]
 
