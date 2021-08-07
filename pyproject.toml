@@ -6,7 +6,6 @@ build-backend = "flit_core.buildapi"
 module = "furo"
 author = "Isaac Gonzalez"
 home-page = "https://github.com/isaacyadir"
-description-file = "README.md"
 requires-python = ">=3.6"
 requires = [
   "beautifulsoup4",
