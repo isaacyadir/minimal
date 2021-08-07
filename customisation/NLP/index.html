@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="../../genindex/" /><link rel="search" title="Search" href="../../search/" /><link rel="next" title="Adding a logo" href="../logo/" /><link rel="prev" title="Customisation" href="../" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><meta name="generator" content="sphinx-4.1.2, furo 2021.07.31.dev42"/>
-        <title>Objective - Isaac&#39;s Blog</title>
+        <title>NLP - Isaac&#39;s Blog</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=daa650a7760fac3eee23aa959745d2c866b74cb3" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
@@ -158,10 +158,7 @@
   <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../about me/">About Me</a></li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="../">Customisation</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Objective</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#ingest">Ingest</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#eda">EDA</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#modeling">Modeling</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">NLP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#conclusion">Conclusion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../logo/">Adding a logo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../colors/">Changing colors</a></li>
@@ -230,8 +227,10 @@
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
-        <section id="objective">
-<h1>Objective<a class="headerlink" href="#objective" title="Permalink to this headline">¶</a></h1>
+        <section class="tex2jax_ignore mathjax_ignore" id="nlp">
+<h1>NLP<a class="headerlink" href="#nlp" title="Permalink to this headline">¶</a></h1>
+<section id="objective">
+<h2>Objective<a class="headerlink" href="#objective" title="Permalink to this headline">¶</a></h2>
 <p>Sentiment analysis is a subfield of NLP and could be applied systematically to identify, extract, quantify, and study affective states and subjective information.</p>
 <p>In this colab notebook, I would use the following two Cloud resources to did sentiment analysis for Yelp Review dataset.</p>
 <ul class="simple">
@@ -240,7 +239,7 @@
 </ul>
 </section>
 <section id="ingest">
-<h1>Ingest<a class="headerlink" href="#ingest" title="Permalink to this headline">¶</a></h1>
+<h2>Ingest<a class="headerlink" href="#ingest" title="Permalink to this headline">¶</a></h2>
 <p>The Yelp review dataset collected from Kaggle contains 10K records of Yelp reviews. Each of them has the stars (1-5) and text review provided by customers.</p>
 <p>data source: https://www.kaggle.com/omkarsabnis/yelp-reviews-dataset</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -361,7 +360,7 @@
 </div>
 </section>
 <section id="eda">
-<h1>EDA<a class="headerlink" href="#eda" title="Permalink to this headline">¶</a></h1>
+<h2>EDA<a class="headerlink" href="#eda" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">'business_id'</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -381,7 +380,7 @@ Name: stars, dtype: float64
 </div>
 <p>The above calculation gives us a first look on how the data spread. We can see that the rating tends to be relatively positive (68% of the ratings &gt; = 4), which may be due to the fact that unhappy customers tend to just leave instead of making efforts to rate.</p>
 <section id="find-reviews-with-low-ratings">
-<h2>Find reviews with low ratings<a class="headerlink" href="#find-reviews-with-low-ratings" title="Permalink to this headline">¶</a></h2>
+<h3>Find reviews with low ratings<a class="headerlink" href="#find-reviews-with-low-ratings" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">negative_reviews</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">stars</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
 <span class="n">negative_reviews</span><span class="p">[</span><span class="s2">"text"</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
@@ -396,7 +395,7 @@ Name: text, dtype: object
 </div>
 </section>
 <section id="find-reviews-with-high-ratings">
-<h2>Find reviews with high ratings<a class="headerlink" href="#find-reviews-with-high-ratings" title="Permalink to this headline">¶</a></h2>
+<h3>Find reviews with high ratings<a class="headerlink" href="#find-reviews-with-high-ratings" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">negative_reviews</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">stars</span> <span class="o">==</span> <span class="mi">5</span><span class="p">]</span>
 <span class="n">negative_reviews</span><span class="p">[</span><span class="s2">"text"</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
@@ -412,7 +411,7 @@ Name: text, dtype: object
 </section>
 </section>
 <section id="modeling">
-<h1>Modeling<a class="headerlink" href="#modeling" title="Permalink to this headline">¶</a></h1>
+<h2>Modeling<a class="headerlink" href="#modeling" title="Permalink to this headline">¶</a></h2>
 <p>In the modeling part, we would focus on the reviews whose stars are 1 to see whether the sentiment analysis would provide the same negative results based on the text data.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rating1</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">'stars'</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span><span class="p">]</span>
 <span class="n">rating1</span><span class="o">.</span><span class="n">shape</span>
@@ -422,7 +421,7 @@ Name: text, dtype: object
 </pre></div>
 </div>
 <section id="gcp-natural-language-api">
-<h2>GCP- Natural Language API<a class="headerlink" href="#gcp-natural-language-api" title="Permalink to this headline">¶</a></h2>
+<h3>GCP- Natural Language API<a class="headerlink" href="#gcp-natural-language-api" title="Permalink to this headline">¶</a></h3>
 <p>Sentiment analysis attempts to determine the overall attitude (positive or negative) expressed within the text. Sentiment is represented by numerical score and magnitude values.</p>
 <p>**Score of the sentiment ** ranges between -1.0 (negative) and 1.0 (positive) and corresponds to the overall emotional leaning of the text.</p>
 <p><strong>Magnitude</strong> indicates the overall strength of emotion (both positive and negative) within the given text, between 0.0 and +inf. Unlike score, magnitude is not normalized; each expression of emotion within the text (both positive and negative) contributes to the text’s magnitude (so longer text blocks may have greater magnitudes).</p>
@@ -464,7 +463,7 @@ Name: text, dtype: object
 </pre></div>
 </div>
 <section id="example">
-<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<h4>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">analyze</span><span class="p">(</span><span class="n">movie_review_filename</span><span class="p">):</span>
     <span class="sd">"""Run a sentiment analysis request on text within a passed filename."""</span>
     <span class="n">client</span> <span class="o">=</span> <span class="n">language</span><span class="o">.</span><span class="n">LanguageServiceClient</span><span class="p">()</span>
@@ -518,7 +517,7 @@ Overall Sentiment: score of 0.6000000238418579 with magnitude of 6.1999998092651
 <p>The above example would indicate a review that was relatively positive (score of 0.6), and relatively emotional (magnitude of 6.2).</p>
 </section>
 <section id="yelp-review">
-<h3>Yelp review<a class="headerlink" href="#yelp-review" title="Permalink to this headline">¶</a></h3>
+<h4>Yelp review<a class="headerlink" href="#yelp-review" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_sentiment_gcp</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
     <span class="sd">"""Uses GCP Cloud NL to Create Sentiments on a DataFrame"""</span>
 
@@ -693,23 +692,23 @@ Name: Sentiment_binary, dtype: int64
 </section>
 </section>
 <section id="aws-comprehend">
-<h2>AWS Comprehend<a class="headerlink" href="#aws-comprehend" title="Permalink to this headline">¶</a></h2>
+<h3>AWS Comprehend<a class="headerlink" href="#aws-comprehend" title="Permalink to this headline">¶</a></h3>
 <p>Inspects text and returns an inference of the prevailing sentiment (POSITIVE, NEUTRAL, MIXED, or NEGATIVE)</p>
 <section id="install-boto3">
-<h3>Install boto3<a class="headerlink" href="#install-boto3" title="Permalink to this headline">¶</a></h3>
+<h4>Install boto3<a class="headerlink" href="#install-boto3" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!pip -q install boto3
 </pre></div>
 </div>
 </section>
 <section id="create-api-config">
-<h3>Create API Config<a class="headerlink" href="#create-api-config" title="Permalink to this headline">¶</a></h3>
+<h4>Create API Config<a class="headerlink" href="#create-api-config" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!mkdir -p ~/.aws &amp;&amp;\
   cat /content/gdrive/My\ Drive/awsml/credentials.txt &gt; ~/.aws/credentials
 </pre></div>
 </div>
 </section>
 <section id="test-comprehend-api-call">
-<h3>Test Comprehend API Call<a class="headerlink" href="#test-comprehend-api-call" title="Permalink to this headline">¶</a></h3>
+<h4>Test Comprehend API Call<a class="headerlink" href="#test-comprehend-api-call" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">boto3</span>
 <span class="n">comprehend</span> <span class="o">=</span> <span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="n">service_name</span><span class="o">=</span><span class="s1">'comprehend'</span><span class="p">,</span> <span class="n">region_name</span><span class="o">=</span><span class="s2">"us-east-1"</span><span class="p">)</span>
 <span class="n">text</span> <span class="o">=</span> <span class="s2">"There is smoke in San Francisco and it makes me angry"</span>
@@ -733,7 +732,7 @@ Name: Sentiment_binary, dtype: int64
 </div>
 </section>
 <section id="creating-an-apply-function">
-<h3>Creating an Apply function<a class="headerlink" href="#creating-an-apply-function" title="Permalink to this headline">¶</a></h3>
+<h4>Creating an Apply function<a class="headerlink" href="#creating-an-apply-function" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_sentiment_aws</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
     <span class="sd">"""Uses AWS Comprehend to Create Sentiments on a DataFrame"""</span>
 
@@ -897,6 +896,7 @@ Name: Sentiment, dtype: int64
 </section>
 </section>
 </section>
+</section>
 <section class="tex2jax_ignore mathjax_ignore" id="conclusion">
 <h1>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h1>
 <p>In this project, we practice how to use GCP- Natural Language API and AWS Comprehend API to conduct sentiment analysis for text reviews.</p>
@@ -962,7 +962,8 @@ Name: Sentiment, dtype: int64
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Objective</a></li>
+<li><a class="reference internal" href="#">NLP</a><ul>
+<li><a class="reference internal" href="#objective">Objective</a></li>
 <li><a class="reference internal" href="#ingest">Ingest</a></li>
 <li><a class="reference internal" href="#eda">EDA</a><ul>
 <li><a class="reference internal" href="#find-reviews-with-low-ratings">Find reviews with low ratings</a></li>
@@ -980,6 +981,8 @@ Name: Sentiment, dtype: int64
 <li><a class="reference internal" href="#create-api-config">Create API Config</a></li>
 <li><a class="reference internal" href="#test-comprehend-api-call">Test Comprehend API Call</a></li>
 <li><a class="reference internal" href="#creating-an-apply-function">Creating an Apply function</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
