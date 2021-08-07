@@ -14,7 +14,7 @@ A clean customisable Sphinx documentation theme.
 ```{toctree}
 :hidden:
 
-quickstart
+About
 customisation/index
 reference/index
 recommendations
@@ -26,7 +26,5 @@ recommendations
 
 contributing/index
 kitchen-sink/index
-changelog
-license
-GitHub Repository <https://github.com/pradyunsg/furo>
+GitHub Repository <https://github.com/isaacyadir>
 ```
