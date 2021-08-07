@@ -35,7 +35,7 @@ extensions = [
     # External stuff
     "myst_parser",
     "sphinx_copybutton",
-    "sphinx_inline_tabs"],
+    "sphinx_inline_tabs",
 
     # i put these things here - might delete
     "myst_nb",
