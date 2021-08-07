@@ -21,10 +21,11 @@ recommendations
 ```
 
 ```{toctree}
-:caption: Development
+:caption: Links
 :hidden:
 
 contributing/index
 kitchen-sink/index
-GitHub Repository <https://github.com/isaacyadir>
+GitHub<https://github.com/isaacyadir>
+Linkedin<https://www.linkedin.com/in/isaacyadir/>
 ```
