@@ -14,7 +14,7 @@ A clean customisable Sphinx documentation theme.
 ```{toctree}
 :hidden:
 
-About
+about
 customisation/index
 reference/index
 recommendations
