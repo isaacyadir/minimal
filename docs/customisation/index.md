@@ -7,6 +7,7 @@ This section serves to guide the user with customising Furo-based documentation.
 ```{toctree}
 :hidden:
 
+NLP
 logo
 colors
 fonts
