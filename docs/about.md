@@ -5,28 +5,28 @@ I help run [2i2c - the International Interactive Computing Collaboration](https:
 ## Work Experience
 <p><a href="https://www.ea.com/"><strong>Electronic Arts</a></strong> | Data Science Intern <br> 
 May 2021 - Aug 2021 | San Fransisco, California<br></p>
-<ul style="margin-top:-20px;">
+<ul>
 <li>Predicted market-level revenue with 93% accuracy using an LSTM Network</li>
 <li>Forecasted FY22 revenue for 20+ game genres to help EA's executive leadership team make strategic decisions regarding video game acquisitions</li>
 <li>Performed sentiment analysis and topic modelling on millions of video game reviews to identify software bugs</li>
 </ul>
 <p><a href="https://www.conocophillips.com/"><strong>ConocoPhillips</strong></a> | Data Science Intern <br>
 Aug 2020 - Dec 2020 | Houston, Texas</p>
-<ul style="margin-top:-20px;">
+<ul>
 <li>Classified rod pump failure with 91% accuracy using XGBoost - leading to an increase in oil yield and a decrease in environmental impact</li>
 <li>Applied data pre-processing techniques such as principal component analysis, outlier removal, normalization, and feature selection on sequential big data</li>
 <li>Presented project results to a panel of 20+ data scientists</li>
 </ul>
 <p><a href="https://www2.deloitte.com/us/en.html"><strong>Deloitte</strong></a> | Data Science Intern <br> 
 May 2020 - Jul 2020 | Austin, Texas</p>
-<ul style="margin-top:-20px;">
+<ul>
 <li>Applied Logistic Regression and Bayesian Classifiers to compute Deloitte's probability of winning engagement contracts</li>
 <li>Designed an engagement revenue prediction tool using Artificial Neural Networks</li>
 <li>Mined large data sets to discover patterns within the consulting industry</li>
 </ul>
 <p><a href="https://www.cargill.com/"><strong>Cargill</strong></a> | Data Science Intern <br> 
 May 2019 - Aug 2019 | Minneapolis, Minnesota</p>
-<ul style="margin-top:-20px;">
+<ul>
 <li>Used Random Forest Regression to identify variables associated with higher rated products in order to recommend product changes</li>
 <li>Collaborated with Cargill’s software engineering team to create a centralized database system to store plant facility data around the world</li>
 <li>Presented project results to an audience of 200+ interns and 5+ executives</li>
@@ -83,7 +83,7 @@ Probability<br> </p>
 <div id="data-analysis-and-machine-learning" class="section level4">
 <p><a href="https://www.deeplearning.ai/program/deep-learning-specialization/"><strong>Deep Learning Specialization</strong></a><br>
 Tools: NumPy, Pandas, TensorFlow, Keras</p>
-<ul style="margin-top:-20px;">
+<ul>
 <li><a href="https://www.coursera.org/learn/neural-networks-deep-learning">Neural Networks and Deep Learning</a></li>
 <li><a href="https://www.coursera.org/learn/deep-neural-network5">Improving Deep Neural Networks</a></li>
 <li><a href="https://www.coursera.org/learn/machine-learning-projects">Structuring Machine Learning Projects</a></li>
@@ -92,7 +92,7 @@ Tools: NumPy, Pandas, TensorFlow, Keras</p>
 </ul>
 <p><a href="https://www.deeplearning.ai/program/natural-language-processing-specialization/"><strong>Natural Language Processing Specialization</strong></a><br>
 Tools: NumPy, Pandas, TensorFlow, keras, NLTK</p>
-<ul style="margin-top:-20px;">
+<ul>
 <li><a href="https://www.coursera.org/learn/classification-vector-spaces-in-nlp?utm_source=deeplearningai&utm_medium=institutions&utm_campaign=WebsiteCoursesNLPC1SyllabusButton">Natural Language Processing with Classification and Vector Spaces</a></li>
 <li><a href="https://www.coursera.org/learn/probabilistic-models-in-nlp?utm_source=deeplearningai&utm_medium=institutions&utm_campaign=WebsiteCoursesNLPC2SyllabusButton">Natural Language Processing with Probabilistic Models</a></li>
 <li><a href="https://www.coursera.org/learn/sequence-models-in-nlp?utm_source=deeplearningai&utm_medium=institutions&utm_campaign=WebsiteCoursesNLPC3SyllabusButton">Natural Language Processing with Sequence Models</a></li>
