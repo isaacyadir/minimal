@@ -14,9 +14,9 @@ sys.path.append(os.path.abspath("./kitchen-sink/demo_py"))
 # -- Project information -----------------------------------------------------
 #
 
-project = "furo"
-copyright = "2020, Pradyun Gedam"
-author = "Pradyun Gedam"
+project = "Isaac's Blog"
+copyright = "2020, Isaac Gonzalez"
+author = "Isaac Gonzalez"
 
 #
 # -- General configuration ---------------------------------------------------
@@ -73,8 +73,12 @@ myst_heading_anchors = 3
 #
 
 html_theme = "furo"
-html_title = "Furo"
+html_title = "Isaac's Blog"
 language = "en"
 
 html_static_path = ["_static"]
 html_css_files = ["pied-piper-admonition.css"]
+
+html_logo = "_static/sphere2.png"
+
+html_favicon = "_static/favicon.ico"
