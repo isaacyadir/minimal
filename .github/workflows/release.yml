@@ -13,6 +13,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          pip install myst-nb
           pip install build
           npm install
 
