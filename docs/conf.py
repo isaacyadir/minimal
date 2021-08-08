@@ -36,6 +36,10 @@ extensions = [
     "myst_parser",
     "sphinx_copybutton",
     "sphinx_inline_tabs",
+    # I added the below
+    "myst_nb",
+    "ablog",
+    "sphinx_panels",
     ]
 
 myst_enable_extensions = [
