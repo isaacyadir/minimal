@@ -40,6 +40,11 @@ extensions = [
     #might delete
     "myst_nb",
     ]
+
+myst_enable_extensions = [
+    "deflist",
+    "colon_fence",
+]
     
 templates_path = ["_templates"]
 
