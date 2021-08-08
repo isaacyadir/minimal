@@ -13,25 +13,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install nox
-          npm install
-          pip install scipy
-          pip install numpy
-          pip install matplotlib
-          pip install seaborn 
-          pip install pandas
-          pip install nilearn
-          pip install ipywidgets
-          pip install colorspacious
-          pip install makeitpop
-          pip install xarray
-          pip install myst_nb
-          pip install ablog
-          pip install MyST-Parser
-          pip sphinxext-rediraffe
-          pip sphinx_book_theme
-          pip sphinx_copybutton
-          pip sphinx_thebe
+          pip install -r requirements.txt
           pip install build
           npm install
 
