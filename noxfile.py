@@ -1,6 +1,5 @@
 """Development automation
 """
-import myst_nb
 import datetime
 import glob
 import os
