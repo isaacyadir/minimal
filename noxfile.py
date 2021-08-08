@@ -1,5 +1,7 @@
 """Development automation
 """
+pip install myst-nb
+import myst-nb
 import datetime
 import glob
 import os
