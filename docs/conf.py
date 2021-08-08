@@ -36,6 +36,9 @@ extensions = [
     "myst_parser",
     "sphinx_copybutton",
     "sphinx_inline_tabs",
+    
+    #might delete
+    "myst_nb",
     ]
     
 templates_path = ["_templates"]
