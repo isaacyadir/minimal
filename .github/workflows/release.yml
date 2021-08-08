@@ -13,6 +13,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          pip install -r requirements.txt
           pip install build
           npm install
 
