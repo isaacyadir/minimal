@@ -13,7 +13,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install myst-nb
           pip install nox
           npm install
 
